@@ -13,6 +13,11 @@
 		0C1F317F26BB01C900A6686B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C1F317D26BB01C900A6686B /* Main.storyboard */; };
 		0C1F318126BB01CB00A6686B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C1F318026BB01CB00A6686B /* Assets.xcassets */; };
 		0C1F318426BB01CB00A6686B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C1F318226BB01CB00A6686B /* LaunchScreen.storyboard */; };
+		0C1F318C26BB038600A6686B /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1F318B26BB038600A6686B /* QuizViewController.swift */; };
+		0C1F318E26BB045400A6686B /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1F318D26BB045400A6686B /* ScoreViewController.swift */; };
+		0C1F319026BB091200A6686B /* quiz.csv in Resources */ = {isa = PBXBuildFile; fileRef = 0C1F318F26BB091200A6686B /* quiz.csv */; };
+		0C1F319426BB865400A6686B /* correct.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C1F319226BB865300A6686B /* correct.png */; };
+		0C1F319526BB865400A6686B /* incorrect.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C1F319326BB865300A6686B /* incorrect.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		0C1F318026BB01CB00A6686B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C1F318326BB01CB00A6686B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C1F318526BB01CB00A6686B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C1F318B26BB038600A6686B /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		0C1F318D26BB045400A6686B /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
+		0C1F318F26BB091200A6686B /* quiz.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = quiz.csv; sourceTree = "<group>"; };
+		0C1F319226BB865300A6686B /* correct.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = correct.png; sourceTree = "<group>"; };
+		0C1F319326BB865300A6686B /* incorrect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = incorrect.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,11 +70,24 @@
 				0C1F317926BB01C900A6686B /* SceneDelegate.swift */,
 				0C1F317B26BB01C900A6686B /* ViewController.swift */,
 				0C1F317D26BB01C900A6686B /* Main.storyboard */,
+				0C1F318F26BB091200A6686B /* quiz.csv */,
+				0C1F318D26BB045400A6686B /* ScoreViewController.swift */,
+				0C1F318B26BB038600A6686B /* QuizViewController.swift */,
+				0C1F319126BB865300A6686B /* image */,
 				0C1F318026BB01CB00A6686B /* Assets.xcassets */,
 				0C1F318226BB01CB00A6686B /* LaunchScreen.storyboard */,
 				0C1F318526BB01CB00A6686B /* Info.plist */,
 			);
 			path = itQuiz;
+			sourceTree = "<group>";
+		};
+		0C1F319126BB865300A6686B /* image */ = {
+			isa = PBXGroup;
+			children = (
+				0C1F319226BB865300A6686B /* correct.png */,
+				0C1F319326BB865300A6686B /* incorrect.png */,
+			);
+			path = image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,9 +147,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C1F319426BB865400A6686B /* correct.png in Resources */,
+				0C1F319526BB865400A6686B /* incorrect.png in Resources */,
 				0C1F318426BB01CB00A6686B /* LaunchScreen.storyboard in Resources */,
 				0C1F318126BB01CB00A6686B /* Assets.xcassets in Resources */,
 				0C1F317F26BB01C900A6686B /* Main.storyboard in Resources */,
+				0C1F319026BB091200A6686B /* quiz.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +165,9 @@
 			files = (
 				0C1F317C26BB01C900A6686B /* ViewController.swift in Sources */,
 				0C1F317826BB01C900A6686B /* AppDelegate.swift in Sources */,
+				0C1F318E26BB045400A6686B /* ScoreViewController.swift in Sources */,
 				0C1F317A26BB01C900A6686B /* SceneDelegate.swift in Sources */,
+				0C1F318C26BB038600A6686B /* QuizViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
